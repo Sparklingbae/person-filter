@@ -31,7 +31,7 @@ interface User {
       if (person.type !== personType) return false;
   
       for (const key in criteria) {
-        // @ts-ignore: I'm are sure the key exists on person and criteria
+        // @ts-ignore: I'm sure the key exists on person and criteria
         if (person[key] !== criteria[key]) return false;
       }
       return true;
